@@ -1,0 +1,14 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "build"
+      - "--tag=asia.gcr.io/$PROJECT_ID/node:14.18.0-alpine"
+      - "--tag=asia.gcr.io/$PROJECT_ID/node:14-alpine"
+      - "--tag=asia.gcr.io/$PROJECT_ID/node:latest"
+      - "."
+    waitFor: ["-"]
+
+images:
+  - "asia.gcr.io/$PROJECT_ID/node:14.18.0-alpine"
+  - "asia.gcr.io/$PROJECT_ID/node:14-alpine"
+  - "asia.gcr.io/$PROJECT_ID/node:latest"

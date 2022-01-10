@@ -7,4 +7,4 @@ steps:
     waitFor: ["-"]
 
 images:
-  - "asia.gcr.io/$PROJECT_ID/node:latest"
+  - "gcr.io/$PROJECT_ID/node:latest"

@@ -1,1 +1,1 @@
-FROM node:20.5.1-alpine
+FROM node:20.8.0-alpine
